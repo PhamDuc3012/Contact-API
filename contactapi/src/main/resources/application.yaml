@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: contactapi
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contactapi
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  mvc:
+    async:
+      request-timeout: 3600000
+
+
